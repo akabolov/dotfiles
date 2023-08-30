@@ -1,0 +1,24 @@
+[[language]]
+name = "javascript"
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+# file-types = ["mjs", "js", "cjs" ,"jsx"]
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+# file-types = ["ts", "tsx"]
+auto-format = true
+
+
+[[language]]
+name = "tsx"
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+# file-types = ["ts", "tsx"]
+auto-format = true
+
+[[language]]
+name = "go"
+auto-format = true
+config = {completeUnimported = true, usePlaceholders = true, analyses = { unusedparams = true}}
+

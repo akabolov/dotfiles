@@ -1,0 +1,6 @@
+inherits = "nord"
+"ui.background" = {}
+
+"comment" = { fg = "nord_pers_comments", bg = "", modifiers = ["italic"]}
+
+nord_pers_comments = "#cccccc"

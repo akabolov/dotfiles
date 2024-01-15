@@ -3,22 +3,46 @@ name = "javascript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 # file-types = ["mjs", "js", "cjs" ,"jsx"]
 auto-format = true
+indent = { tab-width = 2, unit = "  " }
 
 [[language]]
 name = "typescript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 # file-types = ["ts", "tsx"]
 auto-format = true
-
+indent = { tab-width = 2, unit = "  " }
 
 [[language]]
 name = "tsx"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 # file-types = ["ts", "tsx"]
 auto-format = true
+indent = { tab-width = 2, unit = "  " }
 
 [[language]]
 name = "go"
 auto-format = true
-config = {completeUnimported = true, usePlaceholders = true, analyses = { unusedparams = true}}
+#  config = {completeUnimported = true, usePlaceholders = true, analyses = { unusedparams = true}}
+indent = { tab-width = 2, unit = "  " }
 
+# [[language]]
+# name = "astro"
+# file-types = ["astro"]
+# indent = { tab-width = 2, unit = "  " }
+# language-server = {command = "astro-ls", args = ["--stdio"]}
+# auto-format = true
+# formatter = {command = "prettier" , args = ["--write", "."]}
+
+[[language]]
+name = "yaml"
+indent = { tab-width = 2, unit = "  " }
+
+[[langueage]]
+name = "c"
+auto-formnat = true
+indent = { tab-width = 2, unit = "  " }
+
+[[langueage]]
+name = "cpp"
+auto-formnat = true
+indent = { tab-width = 2, unit = "  " }

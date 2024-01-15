@@ -1,5 +1,5 @@
 return {
-  { "shaunsingh/nord.nvim" },
+  "https://github.com/nordtheme/vim",
   {
     "LazyVim/LazyVim",
     opts = {

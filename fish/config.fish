@@ -15,9 +15,13 @@ set -U fish_user_paths $HOME/.bin  $HOME/.local/bin /opt/homebrew/bin $HOME/Appl
 ### EXPORT ###
 set fish_greeting                                 # Supresses fish's intro message
 set TERM "xterm-256color"                         # Sets the terminal type
-set EDITOR "nvim"                 # $EDITOR use Emacs in terminal
+set -gx EDITOR "hx"                 # $EDITOR use Emacs in terminal
 set NNN_PLUG "'f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'"
 set GOPATH "~/go"
+set JAVA_HOME "/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home"
+set ANDROID_HOME "$HOME/Library/Android/sdk"
+set PATH "$PATH:$ANDROID_HOME/emulator"
+set PATH "$PATH:$ANDROID_HOME/platform-tools"
 
 ### SET MANPAGER
 ### Uncomment only one of these!

@@ -25,8 +25,10 @@ font:
   normal:
     #family: "MesloLGS NF"
     #family: "FiraCode Nerd Font"
+    #family: "Hack Nerd Font"
     family: "Iosevka Nerd Font"
-    style: Light
+    #family: "Monaspace Krypton"
+    #style: Light
   size: 20.00
   offset:
     x: 0
@@ -53,7 +55,7 @@ cursor:
 live_config_reload: true
 
 import:
-  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
 
 # colors:
 #    primary:

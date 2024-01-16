@@ -8,6 +8,11 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
+vim.cmd("set clipboard+=unnamedplus")
 
-vim.cmd("set rnu")
+vim.cmd("set nu rnu")
 vim.g.mapleader = " "
+
+vim.keymap.set('n', '<Tab>', ':bnext <CR>', {})
+vim.keymap.set('n', '<S-Tab>', ':bprevious <CR>', {})
+vim.keymap.set('n', '<C-w>', ':bd <CR>', {})

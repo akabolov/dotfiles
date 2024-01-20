@@ -13,6 +13,7 @@ return {
 		"hrsh7th/nvim-cmp",
 		config = function()
 			local cmp = require("cmp")
+
 			require("luasnip.loaders.from_vscode").lazy_load()
 
 			cmp.setup({
@@ -35,6 +36,8 @@ return {
 					["<C-Space>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
 					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+                    ["<Tab>"] = cmp.mapping.select_next_item({{ behavior = cmp.SelectBehavior.Insert }}),
+                    ["<S-Tab>"] = cmp.mapping.select_prev_item({{ behavior = cmp.SelectBehavior.Insert }})
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
@@ -87,6 +90,9 @@ return {
 				capabilities = capabilities,
 			})
 			require("lspconfig")["lua_ls"].setup({
+				capabilities = capabilities,
+			})
+			require("lspconfig")["clangd"].setup({
 				capabilities = capabilities,
 			})
 		end,

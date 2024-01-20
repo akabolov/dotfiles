@@ -1,19 +1,21 @@
 return {
-    'akinsho/bufferline.nvim',
-    version = "*",
-    dependencies = 'nvim-tree/nvim-web-devicons',
-    config = function()
-        require("bufferline").setup({
-            options = {
-                offsets = {
-                    {
-                        filetype = "neo-tree",
-                        text = "Explorer",
-                        separator = false,
-                        text_align = "left",
-                    }
-                }
-            }
-        })
-    end
+  'akinsho/bufferline.nvim',
+  version = "*",
+  dependencies = 'nvim-tree/nvim-web-devicons',
+  config = function()
+    local bufferline = require("bufferline")
+    bufferline.setup({
+      options = {
+        style_preset = bufferline.style_preset.minimal,
+        offsets = {
+          {
+            filetype = "neo-tree",
+            text = "Explorer",
+            separator = true,
+            text_align = "left",
+          }
+        }
+      }
+    })
+  end
 }

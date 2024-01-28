@@ -1,9 +1,9 @@
-[[language]]
-name = "javascript"
-formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+# [[language]]
+# name = "javascript"
+# formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 # file-types = ["mjs", "js", "cjs" ,"jsx"]
-auto-format = true
-indent = { tab-width = 2, unit = "  " }
+# auto-format = true
+# indent = { tab-width = 2, unit = "  " }
 
 [[language]]
 name = "typescript"

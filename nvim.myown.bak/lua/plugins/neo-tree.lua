@@ -109,6 +109,7 @@ local opts = {
             -- Read `# Preview Mode` for more information
             -- ["l"] = "focus_preview",
             ["l"] = "open",
+            ["h"] = "close_node",
             ["S"] = "open_split",
             ["s"] = "open_vsplit",
             -- ["S"] = "split_with_window_picker",

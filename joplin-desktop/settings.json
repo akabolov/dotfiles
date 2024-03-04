@@ -1,0 +1,38 @@
+{
+	"$schema": "https://joplinapp.org/schema/settings.json",
+	"locale": "en_GB",
+	"api.token": "e8134d01b31885ed80fc2b2e8eb01ac09b29685668b472940bf2de55b7662147c8fc181ec332129887fa93cbe71738d8ea4283f04e6037cacbde86d482e05419",
+	"markdown.plugin.softbreaks": false,
+	"markdown.plugin.typographer": false,
+	"spellChecker.languages": [
+		"en-US"
+	],
+	"noteVisiblePanes": [
+		"editor",
+		"viewer"
+	],
+	"ui.layout": {
+		"key": "root",
+		"children": [
+			{
+				"key": "sideBar",
+				"width": 250,
+				"visible": true
+			},
+			{
+				"key": "noteList",
+				"width": 250,
+				"visible": true
+			},
+			{
+				"key": "editor",
+				"visible": true
+			}
+		],
+		"visible": true
+	},
+	"theme": 6,
+	"editor.codeView": true,
+	"editor": "/opt/homebrew/bin/hx",
+	"editor.spellcheckBeta": true
+}
